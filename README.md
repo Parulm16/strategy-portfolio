@@ -11,17 +11,7 @@ Welcome! This repository showcases algorithmic trading strategies built using Py
 ---
 
 ## 📁 Structure
-
-├── oi_volume_strategy/
-│ ├── sample_data.csv # Sample OI + price + volume data
-│ ├── oi_volume_signal.py # Signal generation logic
-│ ├── oi_volume_backtest.py # Backtesting logic
-│
-├── run_strategy.py # Executes signal generation
-├── run_backtest.py # Runs backtest and prints results
-├── plot_performance.py # Plots cumulative returns
-├── README.md # Project overview
-└── requirements.txt # Python packages
+<pre> Strategy-portfolio/ │ ├── oi_volume_strategy/ │ ├── sample_data.csv # Sample OI + price + volume data │ ├── oi_volume_signal.py # Signal generation logic │ ├── oi_volume_backtest.py # Backtesting logic │ ├── run_strategy.py # Executes signal generation ├── run_backtest.py # Runs backtest and prints results ├── plot_performance.py # Plots cumulative returns ├── requirements.txt # Python package dependencies └── README.md # Project overview </pre>
 
 This strategy interprets trader behavior by analyzing:
 
