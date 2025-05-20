@@ -1,17 +1,17 @@
-# strategy-portfolio
-# 📊 Strategy Portfolio: Pythonic Trading Algorithms
+# Pair Trading
+This strategy identifies trading opportunities between two co-moving indices (e.g., NIFTY and BANKNIFTY). It uses linear regression to estimate a hedge ratio and trades the spread when it diverges significantly from the mean (based on Z-score).
 
-Welcome to my algorithmic trading portfolio — a curated collection of Python-based trading strategies. This project demonstrates practical skills in quantitative strategy design, signal generation, backtesting, and visualization.
+**Signal Logic:**
+- Z > 1 → Short Spread
+- Z < -1 → Long Spread
+- Z ≈ 0 → Exit
+  
+- `pair_signal.py`: Calculates hedge ratio, spread, and Z-score-based signals
+- `pair_backtest.py`: Computes returns from the strategy
+- `pair_plot.py`: Visualizes the performance
+- `pair_data.csv`: Sample 2025 data (Jan–Mar)
 
----
+To run:
 
-## 🎯 Objective
-
-This portfolio is designed to:
-
-- Showcase hands-on Python development for trading
-- Demonstrate use of market data (price, volume, OI)
-- Present strategies in a modular, testable, and production-friendly structure
-- Help recruiters evaluate my capability as a trading-focused Python developer
-
----
+```bash
+python plot_pair_performance.py
